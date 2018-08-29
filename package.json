@@ -1,6 +1,5 @@
 {
   "name": "todoapp",
-  "homepage": "https://oguzsh.github.io/todoapp/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,11 +12,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "eject": "react-scripts eject"
   }
 }
