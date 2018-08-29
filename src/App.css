@@ -1,0 +1,70 @@
+.App {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+.todoForm {
+  margin: 30px;
+  position: relative;
+}
+
+.todoInput {
+  width: 500px;
+  padding: 20px;
+}
+
+.todoBtn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 0px !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  height: 100%;
+  width: auto;
+  outline: none;
+}
+
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  font-family: 'Poppins', sans-serif;
+  width: 400px;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 976px) {
+  .App {
+    margin-top: 10%;
+  }
+
+  .todoInput {
+    width: 300px;
+  }
+
+  .list-group-item {
+    width: 300px;
+  }
+}
