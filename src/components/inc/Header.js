@@ -4,7 +4,9 @@ import { PageHeader } from "react-bootstrap";
 class Header extends Component {
   render() {
     return (
-        < PageHeader > 🌎Todo App🌎  </PageHeader>
+      <PageHeader>
+        <span role="img">🌎</span> Todo App <span role="img">🌎</span>
+      </PageHeader>
     );
   }
 }

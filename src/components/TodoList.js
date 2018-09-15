@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ListGroup } from "react-bootstrap";
+import TodoItem from "./TodoItem";
 
 class TodoList extends Component {
   render() {
@@ -7,11 +8,7 @@ class TodoList extends Component {
       <div>
         <ListGroup>
           {this.props.todos.map((todo, index) => {
-            return (
-              <li className="list-group-item" key={index}>
-                {todo.text}
-              </li>
-            );
+            return <TodoItem text={todo.text} key={index} index={index} removeTodo={this.props.removeTodo} />;
           })}
         </ListGroup>
       </div>
